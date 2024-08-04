@@ -3,3 +3,4 @@ langchain
 openai
 transformers
 torch
+python-dotenv

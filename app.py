@@ -6,8 +6,7 @@ import os
 
 #Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
-api_key = os.getenv("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")
-
+api_key = os.getenv("OPENAI_API_KEY")
 def summarize_article(article_text):
     llm = OpenAI(api_key=api_key)
     prompt = f"Por favor, forneça um resumo conciso do seguinte artigo:\n\n{article_text}"
