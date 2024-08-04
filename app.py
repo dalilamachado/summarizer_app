@@ -6,7 +6,7 @@ import os
 
 #Carregar variáveis de ambiente do arquivo .env
 load_dotenv()
-api_key = os.getenv("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")
+OpenAI(api_key="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")
 
 def summarize_article(article_text):
     llm = OpenAI(api_key=api_key)
